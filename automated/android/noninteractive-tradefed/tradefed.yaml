@@ -19,8 +19,8 @@ params:
     TIMEOUT: "300"
     # Download CTS package or copy it from local disk.
     # CTS_URL: "/root/android-cts/linaro/7.1_r1/android-cts-7.1_r1.zip"
-    TEST_URL: "http://testdata.validation.linaro.org/cts/android-cts-7.1_r1.zip"
-    TEST_PARAMS: "run cts -m CtsBionicTestCases --abi arm64-v8a --disable-reboot --skip-preconditions --skip-device-info"
+    TEST_URL: "https://dl.google.com/dl/android/cts/android-cts-10_r2-linux_x86-arm.zip"
+    TEST_PARAMS: "run cts --module CtsGraphicsTestCases --abi arm64-v8a"
     # set to the name of the top directory in TEST_URL archive
     # This should be 'android-cts' for CTS and android-vts for VTS
     TEST_PATH: "android-cts"

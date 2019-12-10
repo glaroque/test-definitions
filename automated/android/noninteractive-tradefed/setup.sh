@@ -22,6 +22,13 @@ case "${dist}" in
         apt-get update -q
         install_deps "${PKG_DEPS} ${JDK}"
         ;;
+    debian)
+        dpkg --add-architecture i386
+        apt-get update -q
+        install_deps "${PKG_DEPS} ${JDK}"
+        ;;
+    
+    
     *)
         error_msg "Please use Ubuntu for CTS or VTS test."
         ;;
