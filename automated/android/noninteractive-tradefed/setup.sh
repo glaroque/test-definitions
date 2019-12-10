@@ -24,7 +24,7 @@ case "${dist}" in
         install_deps "${PKG_DEPS} ${JDK}"
         ;;
     debian)
-        dpkg --add-architecture amd64
+        dpkg --add-architecture i386
         apt-get update -q
         install_deps "${PKG_DEPS} ${JDK}"
         ;;
