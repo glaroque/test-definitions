@@ -23,9 +23,9 @@ case "${dist}" in
         install_deps "${PKG_DEPS} ${JDK}"
         ;;
     debian)
-        dpkg --add-architecture i386
+        # dpkg --add-architecture i386
         apt-get update -q
-        install_deps "${PKG_DEPS}"
+        install_deps "${PKG_DEPS} ca-certificates default-jdk default-jdk-headless "
         install_deps " ${JDK}"
         ;;
     
