@@ -19,7 +19,6 @@ params:
 
 run:
     steps:
-        - apt install -y net-tools inetutils-ping
         - . ./automated/lib/sh-test-lib
         - . ./automated/lib/android-multinode-test-lib
         - connect_to_remote_adb_tcpip_devices "${ADB_CONNECT_TIMEOUT_SECS}" "${DEVICE_WORKER_MAPPING_FILE}"
